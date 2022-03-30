@@ -63,7 +63,9 @@ function List() {
               }}
               className="form-select form-select-sm"
               id="select-user"
-            ></select>
+            >
+              <option value="0">Jack Lohmar</option>
+            </select>
           </div>
         </div>
       </div>
