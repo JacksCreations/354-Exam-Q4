@@ -2,6 +2,8 @@ import React from 'react';
 import { render } from 'react-dom';
 import { useState } from 'react';
 import { useEffect } from 'react';
+import Header from './components/Header';
+
 const axios = require('axios').default;
 /* 
 Looping Exercise
@@ -44,22 +46,25 @@ function List() {
 
   //ALL BOOTSTRAP & STYLING TAKES PLACE HERE IN THE RENDER FUNCTION
   return (
-    <div
-      style={{ color: 'blue', marginTop: '20px', fontFamily: 'bebas' }}
-      className="container"
-    >
-      <div className="row">
-        <div className="col-12">
-          <h3>User Dropdown</h3>
-          <select
-            style={{
-              marginRight: '20px',
-              fontFamily: 'georgia',
-              width: 'auto',
-            }}
-            className="form-select form-select-sm"
-            id="select-user"
-          ></select>
+    <div>
+      <Header />
+      <div
+        style={{ color: 'blue', marginTop: '20px', fontFamily: 'bebas' }}
+        className="container"
+      >
+        <div className="row">
+          <div className="col-12">
+            <h3>User Dropdown</h3>
+            <select
+              style={{
+                marginRight: '20px',
+                fontFamily: 'georgia',
+                width: 'auto',
+              }}
+              className="form-select form-select-sm"
+              id="select-user"
+            ></select>
+          </div>
         </div>
       </div>
     </div>
