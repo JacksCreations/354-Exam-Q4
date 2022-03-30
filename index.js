@@ -53,7 +53,7 @@ function List() {
         className="container"
       >
         <div className="row">
-          <div className="col-12">
+          <div className="col-lg-12">
             <h3>User Dropdown</h3>
             <select
               style={{

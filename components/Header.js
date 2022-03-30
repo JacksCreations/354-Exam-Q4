@@ -4,40 +4,65 @@ import React from 'react';
 const Header = () => {
   return (
     <>
-      <nav class="navbar navbar-dark bg-primary">
+      <nav class="navbar navbar-expand-lg navbar-light bg-primary">
         <a
-          style={{ marginLeft: '10px', fontFamily: 'bebas' }}
+          style={{ fontFamily: 'bebas', color: 'white', marginLeft: '10px' }}
           class="navbar-brand"
           href="#"
         >
-          Navbar
+          Navbar example
         </a>
         <button
           class="navbar-toggler"
           type="button"
           data-toggle="collapse"
-          data-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-item nav-link active" href="#">
-              Home <span class="sr-only">(current)</span>
-            </a>
-            <a class="nav-item nav-link" href="#">
-              Features
-            </a>
-            <a class="nav-item nav-link" href="#">
-              Pricing
-            </a>
-            <a class="nav-item nav-link disabled" href="#">
-              Disabled
-            </a>
-          </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a
+                style={{
+                  fontFamily: 'gerogia',
+                  color: 'white',
+                  marginLeft: '10px',
+                }}
+                class="nav-link"
+                href="#"
+              >
+                Home <span class="sr-only"></span>
+              </a>
+            </li>
+            <li
+              style={{
+                fontFamily: 'gerogia',
+                color: 'white',
+                marginLeft: '10px',
+              }}
+              class="nav-item"
+            >
+              <a class="nav-link" href="#">
+                Features
+              </a>
+            </li>
+            <li
+              style={{
+                fontFamily: 'gerogia',
+                color: 'white',
+                marginLeft: '10px',
+              }}
+              class="nav-item"
+            >
+              <a class="nav-link" href="#">
+                Pricing
+              </a>
+            </li>
+          </ul>
         </div>
       </nav>
     </>
