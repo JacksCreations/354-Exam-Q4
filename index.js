@@ -62,7 +62,7 @@ function List() {
                 width: 'auto',
               }}
               className="form-select form-select-sm"
-              id="select-user"
+              id={'select-user'}
             >
               <option value="0">Jack Lohmar</option>
             </select>
