@@ -29,7 +29,7 @@ function List() {
     })();
   }, []);
 
-  const userList = users.map((user) => user.name);
+  //const userList = users.map((user) => user.name);
 
   var selectUser = document.getElementById('select-user');
   //console.log(users);
